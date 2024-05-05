@@ -1,25 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import React from "react"
 
-const SortBar = ({onSort}) => {
-    const [sortBy, setSortBy] = useState('health');
+function SortBar ({sortChoice, handleSortChoice}){
 
-    const handleSort = (e) => {
-        setSortBy(e.target.value);
-        onSort(e.target.value);
-      };
-
-
-      return (
-        <div className="mb-4">
-          <label htmlFor="sort-by">Sort by:</label>
-          <select id="sort-by" aria-label="sort" onChange={handleSort}>
+    return(
+    
+        <select onChange={handleSortChoice} value={sortChoice} className="form-select mt-3 mb-3">
+            <option>SORT BY </option>
             <option value="health">Health</option>
             <option value="damage">Damage</option>
             <option value="armor">Armor</option>
-          </select>
-        </div>
-      );
-    };
-    
-    export default SortBar;
+        </select>
+    )
+}
+export default SortBar
