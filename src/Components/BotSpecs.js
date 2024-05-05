@@ -36,7 +36,7 @@ function BotSpecs() {
 
         <button
           className="button1"
-          onClick={() => navigate("/bot-battle/")}
+          onClick={() => navigate("/Bot-Battle/")}
         >
           Go Back
         </button>

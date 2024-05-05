@@ -8,11 +8,11 @@ import BotSpecs from './Components/BotSpecs';
 
 const routes = [
   {
-    path: '/bot-battle',
+    path: '/Bot-Battle',
     element:<App/>,
   },
   {
-    path: '/bot-battle/:id',
+    path: '/Bot-Battle/:id',
     element:<BotSpecs/>,
   }
 ];

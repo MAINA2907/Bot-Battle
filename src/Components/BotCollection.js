@@ -86,7 +86,7 @@ function BotCollection({ setSelectedBots, bots, setBots }) {
         {filteredBots.sort(sortChange(sortChoice)).map((bot) => (
         <div className="col-lg-2 mb-3" >
           <div className="card h-100" key={bot.id} >
-            <img src={bot.avatar_url}  className="card-img-center" alt="" onClick={() => navigate(`/bot-battle/${bot.id}`)} />
+            <img src={bot.avatar_url}  className="card-img-center" alt="" onClick={() => navigate(`/Bot-Battle/${bot.id}`)} />
 
             <div className="card-body">
               <h2 className="card-title">{bot.name}</h2>
